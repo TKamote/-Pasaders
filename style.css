@@ -90,13 +90,12 @@ p {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.5s;
 }
+
 @media (max-width: 480px) {
-    body {
-        filter: blur(8px);
-    }
     .pioneers {
         width: 100vw;     
     }
+    .panel:nth-of-type(4),
     .panel:nth-of-type(5),
     .panel:nth-of-type(6),
     .panel:nth-of-type(7)
@@ -109,6 +108,10 @@ p {
     .panel.active h3 {
         opacity: .9;
         color: rgb(177, 177, 241);
+        transition: opacity 0.3s ease-in 0.5s;
+    }
+    .panel.active p {
+        opacity: 1;
         transition: opacity 0.3s ease-in 0.5s;
     }
 }

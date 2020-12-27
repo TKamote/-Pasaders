@@ -3,6 +3,7 @@ const titleBtn1 = document.querySelector('.title-btn1');
 const landingPage = document.querySelector('.landingPage');
 const pioneers = document.querySelector('.pioneers');
 const addBlur = document.querySelector('body');
+const addText = document.querySelector('body');
 
 
 titleBtn1.addEventListener('click', () => {
