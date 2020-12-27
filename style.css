@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+   /* background-image: linear-gradient(to right, #6dd5ed, #2193b0);*/
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .9;
+}
+.landingPage {
+    display: flex;
+}
+button {
+    background-color:transparent;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;  
+    opacity: .9; 
+}
+h2 {
+    color: rgb(52, 19, 141);
+    background-color: bisque;
+    opacity: .95;
+    text-align: center;
+    
+}
+p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.title-btn1 {
+    width: 100%;
+    height: auto;
+}
+.title-btn1 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transform: translateY(0px);
+    z-index: 1;
+    border: solid 4px orange;
+}
+
+.pioneers {
+    display: none;
+    /*display: flex;*/
+    width: 90vw;
+}
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55vh;
+    border-radius: 50px;
+    color: rgb(207, 207, 241);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active {
+    flex: 5;
+}
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+}
+@media (max-width: 480px) {
+    body {
+        filter: blur(8px);
+    }
+    .pioneers {
+        width: 100vw;     
+    }
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(7)
+     {
+        display: none;
+    }
+    .panel h3 {
+        font-size: .7rem;
+    }
+    .panel.active h3 {
+        opacity: .9;
+        color: rgb(177, 177, 241);
+        transition: opacity 0.3s ease-in 0.5s;
+    }
+}
