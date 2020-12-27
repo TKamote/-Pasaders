@@ -2,11 +2,13 @@
 const titleBtn1 = document.querySelector('.title-btn1');
 const landingPage = document.querySelector('.landingPage');
 const pioneers = document.querySelector('.pioneers');
+const addBlur = document.querySelector('body');
 
 
 titleBtn1.addEventListener('click', () => {
     landingPage.style.display = 'none';
     pioneers.style.display = 'flex';
+    addBlur.style.backgroundImage = "url(image/Photo1";
 })
 
 const panels = document.querySelectorAll('.panel');
